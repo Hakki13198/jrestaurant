@@ -1,0 +1,104 @@
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/side-header.avif");
+}
+.header-h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 9rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+  letter-spacing: 5px;
+}
+.about_us_side {
+  font-size: 1.9rem !important;
+}
+.img_quote_end_side {
+  width: 2rem;
+}
+.crew-section {
+  margin: 25rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+.crew_card {
+  position: relative;
+}
+.crew_card img {
+  height: 50vh;
+}
+.crew_card img,
+.wrapper-crew-names {
+  width: 25vw;
+  max-height: 400px;
+}
+.crew_card h5,
+.crew_card h3 {
+  margin: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+}
+.wrapper-crew-names {
+  align-self: center;
+  border-bottom: 5px solid #ffaf02;
+}
+.crew_card h5 {
+  font-size: 1.5rem;
+}
+
+.food-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.food-section img {
+  width: 33%;
+  height: 50vh;
+}
+@media all and (max-width: 1300px) {
+  .crew-section {
+    gap: 50px;
+  }
+  .crew_card img {
+    height: 60vh;
+  }
+  .crew_card img,
+  .wrapper-crew-names {
+    width: 40vw;
+  }
+  .food-section {
+    margin-top: 250px;
+  }
+  .food-section > img {
+    width: 80%;
+    height: 50vw;
+    margin-top: 200px;
+  }
+}
+@media all and (max-width: 800px) {
+  .crew_card img {
+    width: 60vw;
+  }
+  .crew_card img,
+  .wrapper-crew-names {
+    width: 60vw;
+  }
+}
+@media all and (max-width: 600px) {
+  .crew_card img {
+    width: 80vw;
+  }
+  .crew_card img,
+  .wrapper-crew-names {
+    width: 80vw;
+  }
+}
